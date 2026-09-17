@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Title | CS 5814</title>
+
+  <!-- Loads Pico stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Makes a custom style for a photo grid to display team members -->
+  <style>
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+    }
+    .team article {
+      text-align: center;
+      margin: 0;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1rem;
+      display: grid;
+      place-items: center;
+      background: var(--pico-muted-border-color);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .team h3 { margin-bottom: 0.25rem; }
+    .team p  { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- class="container" is a Pico class that centers the page content -->
+  <header class="container">
+    <hgroup>
+      <h1>Project Title Goes Here</h1>
+      <p>CS 5814 Course Project, Fall 2026</p>
+    </hgroup>
+    <!-- role="button" makes a normal link look like a button -->
+    <a href="files/placeholder.pdf" role="button">View Project Proposal (PDF)</a>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <h2>Abstract</h2>
+      <p>
+        Put abstract here
+      </p>
+      <p>
+        Maybe talk about data sources here too, like in the example? Although since we're doing a competition I'm not sure if that's needed.
+      </p>
+    </section>
+
+    <section>
+      <h2>Project Files</h2>
+      <!-- List of all the links to our reports. Add a button and a link for each report when we finish them -->
+      <ul>
+        <li><a href="files/placeholder.pdf">Project Proposal</a></li>
+        <!-- 
+        <li>Checkpoint I Report (add later)</li>
+        <li>Checkpoint II Report (add later)</li>
+        <li>Final Report (add later)</li>
+        -->
+      </ul>
+    </section>
+
+    <section>
+      <h2>Meet the Team</h2>
+      <div class="team">
+
+        <article>
+          <img class="avatar" src="images/placeholder.png" alt="Bailey Malota">
+          <h3>Bailey Malota</h3>
+          <p>Computer Science</p>
+          <!-- 
+          We could add a line like this to include our email, like the example, just not sure if everyone wants their email acessable on the open web
+          <a href="mailto:name@example.com">Email</a> 
+          -->
+        </article>
+
+        <article>
+          <img class="avatar" src="images/placeholder.png" alt="Jaemyung Yu">
+          <h3>Jaemyung Yu</h3>
+          <p>Computer Science</p>
+        </article>
+
+        <article>
+          <img class="avatar" src="images/placeholder.png" alt="Martin Balla">
+          <h3>Martin Balla</h3>
+          <p>Computer Science</p>
+        </article>
+
+        <article>
+          <img class="avatar" src="images/placeholder.png" alt="Maximilian Ilyev">
+          <h3>Maximilian Ilyev</h3>
+          <p>Computer Science</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <small>Virginia Tech, CS 5814 Course Project. Built with Pico.css.</small>
+  </footer>
+
+</body>
+</html>
