@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Title | CS 5814</title>
+  <title>Knowing When to Act | CS 5814</title>
 
   <!-- Loads Pico stylesheet -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
@@ -40,7 +40,9 @@
   <!-- class="container" is a Pico class that centers the page content -->
   <header class="container">
     <hgroup>
-      <h1>Project Title Goes Here</h1>
+      <h1>Knowing When to Act: A Hybrid Classification–
+          Generation System for Proactive Audio
+          Engagement</h1>
       <p>CS 5814 Course Project, Fall 2026</p>
     </hgroup>
     <!-- role="button" makes a normal link look like a button -->
@@ -52,7 +54,23 @@
     <section>
       <h2>Abstract</h2>
       <p>
-        Put abstract here
+        Audio-aware assistants in homes, workplaces, and
+        care settings must decide not only what they hear but whether
+        responding would help. We propose a system for Track II
+        (Proactive Audio Engagement) of the HEARTBEAT Challenge, 
+        in which a system hears 10–90s of environmental or human
+        non-speech audio and must choose among silence, monitor, ask,
+        and intervene, decide when to engage, and produce a concrete
+        response with a brief rationale. Our approach decouples deciding from speaking: a frozen pretrained audio encoder feeds a
+        lightweight causal temporal model that predicts actions frame
+        by frame and derives the engagement time, while a compact
+        language model fine-tuned with LoRA generates the response
+        conditioned on the predicted action and detected sound events. A
+        template-based generator serves as an internal baseline, allowing
+        a controlled comparison of retrieval versus generation. We will
+        evaluate on the challenge development data and leaderboard,
+        with particular attention to false activations and robustness
+        under distribution shift.
       </p>
       <p>
         Maybe talk about data sources here too, like in the example? Although since we're doing a competition I'm not sure if that's needed.
